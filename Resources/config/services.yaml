@@ -1,0 +1,8 @@
+services:
+    tvswe.database_bundle.database_connection:
+        autowire: false
+        autoconfigure: false
+        class: Tvswe\DatabaseBundle\Service\DatabaseConnection
+        arguments:
+            - ~
+        

@@ -1,0 +1,24 @@
+{
+    "name": "tvswe/database-bundle",
+    "type": "library",
+    "description": "Symfony 4 Database bundle",
+    "keywords": [
+        "mysql", "pdo", "symfony", "bundle"
+    ],
+    "homepage": "http://tvswe.eu/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tino Vogel",
+            "email": "tv.swe@gmx.de"
+        }
+    ],
+    "require": {
+        "php": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tvswe\\DatabaseBundle\\": ""
+        }
+    }
+}
