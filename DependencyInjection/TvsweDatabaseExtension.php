@@ -17,7 +17,7 @@ class TvsweDatabaseExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
         
-        $def = $container->getDefinition('tvswe.database_bundle.database_connection');
+        $def = $container->getDefinition('Tvswe\DatabaseBundle\Service\DatabaseConnection');
         $def->replaceArgument(0, $config);
     }
 }
