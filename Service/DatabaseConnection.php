@@ -3,6 +3,7 @@
 namespace Tvswe\DatabaseBundle\Service;
 
 use \PDO;
+use \Tvswe\DatabaseBundle\Operations\OperationInterface;
 
 class DatabaseConnection
 {
@@ -24,5 +25,16 @@ class DatabaseConnection
         }
     }
     
+    public function prepare(OperationInterface $operation)
+    {
+        $query = $operation->getQuery();
+        
+        $stmt = $this->pdo->prepare($query);
+        
+    }
     
+    public function execute(OperationInterface $operation)
+    {
+        $query = $operation->getQuery();
+    }
 }
